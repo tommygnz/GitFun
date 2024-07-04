@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>GitFun</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <section id="git-introduction">
+        <h1>¿Qué es Git?</h1>
+        <p>
+            Git es un sistema de control de versiones distribuido, diseñado para manejar proyectos de software de manera eficiente y con alta
+            velocidad.
+            Creado por Linus Torvalds en 2005, permite a los desarrolladores seguir y gestionar los cambios en el código fuente a lo largo del tiempo.
+        </p>
+    </section>
+
+    <section id="github-introduction">
+        <h2>Git y GitHub: una sinergia para el desarrollo colaborativo</h2>
+        <p>
+            GitHub es una plataforma de desarrollo colaborativo basada en Git. Mientras que Git es una herramienta de control de versiones distribuido,
+            GitHub proporciona un entorno para alojar repositorios de Git en la nube, facilitando la colaboración y el seguimiento de proyectos.
+        </p>
+    </section>
+
+    <section id="git-commands">
+        <h2>Comandos Git</h2>
+
+        <h3 class="command-section">Configuración</h3>
+        <ul>
+            <li>
+                <span class="command-name">config - </span> obtiene y establece las opciones globales o de repositorio de git.  
+            </li>
+        </ul>
+
+        <h3 class="command-section">Creación y clonación de proyectos</h3>
+        <ul>
+            <li>
+                <span class="command-name">init - </span> crea un repositorio vacío o inicializa un repositorio existente.
+            </li>
+            <li>
+                <span class="command-name">clone - </span> clona un repositorio en un nuevo repositorio.
+            </li>
+        </ul>
+
+        <h3>Control de cambios</h3>
+        <ul>
+            <li>
+                <span class="command-name">status - </span>muestra el estado actual del repositorio.
+            </li>
+        </ul>
+
+        <h3>Ramas y Fusiones</h3>
+        <ul>
+            <li>
+                <span class="command-name">log - </span>muestra un registro con los commits realizados en la rama actual en orden cronológico inverso.
+                <ul class="options">
+                    <li>
+                        <span class="option-name">[--oneline]</span>
+                        <br>
+                        Muestra la primera línea de cada commit omitiendo autor, fecha y descripción.
+                    </li>
+                    <li>
+                        <span class="option-name">[--graph --all]</span>
+                        <br>
+                        Muestra una visualización en árbol de los commits en todas las ramas o de los commits en la rama actual si se excluye [--all].
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </section>
+
 </body>
 </html>
