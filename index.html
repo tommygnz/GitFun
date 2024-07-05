@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitFun</title>
 </head>
 <body>
+    <!-- Language buttons -->
+    <div id="language-switcher">
+        <button id="btn-es" class="lang-button">Español</button>
+        <button id="btn-en" class="lang-button">English</button>
+    </div>
+        
     <section id="git-introduction">
         <h1>¿Qué es Git?</h1>
         <p>
@@ -26,41 +32,41 @@
     <section id="git-commands">
         <h2>Comandos Git</h2>
 
-        <h3 class="command-section">Configuración</h3>
+        <h3 class="command-section config">Configuración</h3>
         <ul>
-            <li>
+            <li id="config">
                 <span class="command-name">config - </span> obtiene y establece las opciones globales o de repositorio de git.  
             </li>
         </ul>
 
-        <h3 class="command-section">Creación y clonación de proyectos</h3>
+        <h3 class="command-section creation-cloning">Creación y clonación de proyectos</h3>
         <ul>
-            <li>
+            <li id="init">
                 <span class="command-name">init - </span> crea un repositorio vacío o inicializa un repositorio existente.
             </li>
-            <li>
+            <li id="clone">
                 <span class="command-name">clone - </span> clona un repositorio en un nuevo repositorio.
             </li>
         </ul>
 
-        <h3>Control de cambios</h3>
+        <h3 class="command-section change-control">Control de cambios</h3>
         <ul>
-            <li>
+            <li id="status">
                 <span class="command-name">status - </span>muestra el estado actual del repositorio.
             </li>
         </ul>
 
-        <h3>Ramas y Fusiones</h3>
+        <h3 class="command-section branch-merge">Ramas y Fusiones</h3>
         <ul>
-            <li>
+            <li id="log">
                 <span class="command-name">log - </span>muestra un registro con los commits realizados en la rama actual en orden cronológico inverso.
                 <ul class="options">
-                    <li>
+                    <li id="oneline">
                         <span class="option-name">[--oneline]</span>
                         <br>
                         Muestra la primera línea de cada commit omitiendo autor, fecha y descripción.
                     </li>
-                    <li>
+                    <li id="graph-all">
                         <span class="option-name">[--graph --all]</span>
                         <br>
                         Muestra una visualización en árbol de los commits en todas las ramas o de los commits en la rama actual si se excluye [--all].
@@ -68,8 +74,9 @@
                 </ul>
             </li>
         </ul>
-
     </section>
 
+    <!-- translation script -->
+    <script src="scripts/translation.js"></script>
 </body>
 </html>
